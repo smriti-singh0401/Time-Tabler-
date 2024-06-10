@@ -1,0 +1,483 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>7th Sem Details</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <style>
+    div.scroll {
+      margin: 4px, 4px;
+      padding: 4px;
+      background-color: #ffffff;
+      width: 500px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+    }
+
+    th {
+      text-align: center;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: rgb(0, 0, 0);
+    }
+
+    .formbold-main-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px;
+    }
+
+    .formbold-form-wrapper {
+      margin: 0 auto;
+      max-width: 570px;
+      width: 100%;
+      background: white;
+      padding: 40px;
+    }
+
+    .formbold-form-img {
+      margin-bottom: 45px;
+    }
+
+    .formbold-input-group {
+      margin-bottom: 18px;
+    }
+
+    .formbold-form-select {
+      width: 100%;
+      padding: 12px 22px;
+      border-radius: 5px;
+      border: 1px solid #dde3ec;
+      background: #ffffff;
+      font-size: 16px;
+      color: #536387;
+      outline: none;
+      resize: none;
+    }
+
+    .formbold-input-radio-wrapper {
+      margin-bottom: 25px;
+    }
+
+    .formbold-radio-flex {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .formbold-radio-label {
+      font-size: 14px;
+      line-height: 24px;
+      color: #07074d;
+      position: relative;
+      padding-left: 25px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .formbold-input-radio {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .formbold-radio-checkmark {
+      position: absolute;
+      top: -1px;
+      left: 0;
+      height: 18px;
+      width: 18px;
+      background-color: #ffffff;
+      border: 1px solid #dde3ec;
+      border-radius: 50%;
+    }
+
+    .formbold-radio-label .formbold-input-radio:checked~.formbold-radio-checkmark {
+      background-color: #6a64f1;
+    }
+
+    .formbold-radio-checkmark:after {
+      content: '';
+      position: absolute;
+      display: none;
+    }
+
+    .formbold-radio-label .formbold-input-radio:checked~.formbold-radio-checkmark:after {
+      display: block;
+    }
+
+    .formbold-radio-label .formbold-radio-checkmark:after {
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #ffffff;
+      transform: translate(-50%, -50%);
+    }
+
+    .formbold-form-input {
+      width: 100%;
+      padding: 13px 22px;
+      border-radius: 5px;
+      border: 1px solid #dde3ec;
+      background: #ffffff;
+      font-weight: 500;
+      font-size: 16px;
+      color: #07074d;
+      outline: none;
+      resize: none;
+    }
+
+    .formbold-form-input::placeholder {
+      color: #536387;
+    }
+
+    .formbold-form-input:focus {
+      border-color: #6a64f1;
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .formbold-form-label {
+      color: #07074d;
+      font-size: 14px;
+      line-height: 24px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .formbold-btn {
+      text-align: center;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 5px;
+      padding: 14px 25px;
+      border: none;
+      font-weight: 500;
+      background-color: #6a64f1;
+      color: white;
+      cursor: pointer;
+      margin-top: 25px;
+    }
+
+    .formbold-btn:hover {
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+    }
+    h2 {
+  font-size: 20px;
+}
+  </style>
+</head>
+
+<body>
+  <br>
+  <div class="top-bar">
+    <h4 style="color:rgb(6, 6, 6); text-align:center;">Enter Seventh Semester Subject Details</h4>
+  </div>
+  <div class="formbold-main-wrapper">
+    <div class="formbold-form-wrapper">
+      <form action="https://formbold.com/s/FORM_ID" method="POST">
+            <h2 style="color:rgb(14, 14, 14);">Enter Subjects and Respective Teacher</h2>
+            <div class="formbold-input-group">
+            <label for="username" class="formbold-form-label"> Subject ID </label>
+            <input
+              type="text"
+              id="userid"
+              placeholder="SSGI701"
+              class="formbold-form-input"/>
+            </div>
+            <div class="formbold-input-group">
+            <label for="username" class="formbold-form-label"> Subject Name </label>
+            <input
+              type="text"
+              id="userid"
+              placeholder="ERP"
+              class="formbold-form-input"/>
+            </div>  
+        <div class="formbold-input-group">
+          <label for="username" class="formbold-form-label"> Teacher ID </label>
+          <input
+            type="text"
+            id="userid"
+            placeholder="SSGI202401"
+            class="formbold-form-input"/>
+          </div>
+        <div class="formbold-input-group">
+          <label for="subject" class="formbold-form-label"> Teacher Name </label>
+          <input type="text" id="subject" placeholder="Teacher 1" class="formbold-form-input" />
+        </div>
+        <hr><hr>
+
+        <div class="formbold-input-group">
+            <label for="username" class="formbold-form-label"> Subject ID </label>
+            <input
+              type="text"
+              id="userid"
+              placeholder="SSGI702"
+              class="formbold-form-input"/>
+            </div>
+            <div class="formbold-input-group">
+            <label for="username" class="formbold-form-label"> Subject Name </label>
+            <input
+              type="text"
+              id="userid"
+              placeholder="CNS"
+              class="formbold-form-input"/>
+            </div>  
+        <div class="formbold-input-group">
+          <label for="username" class="formbold-form-label"> Teacher ID </label>
+          <input
+            type="text"
+            id="userid"
+            placeholder="SSGI202404"
+            class="formbold-form-input"/>
+          </div>
+        <div class="formbold-input-group">
+          <label for="subject" class="formbold-form-label"> Teacher Name </label>
+          <input type="text" id="subject" placeholder="Teacher 4" class="formbold-form-input" />
+        </div>
+        <hr><hr>
+
+        <div class="formbold-input-group">
+            <label for="username" class="formbold-form-label"> Subject ID </label>
+            <input
+              type="text"
+              id="userid"
+              placeholder="SSGI703"
+              class="formbold-form-input"/>
+            </div>
+            <div class="formbold-input-group">
+            <label for="username" class="formbold-form-label"> Subject Name </label>
+            <input
+              type="text"
+              id="userid"
+              placeholder="CC"
+              class="formbold-form-input"/>
+            </div>   
+        <div class="formbold-input-group">
+          <label for="username" class="formbold-form-label"> Teacher ID </label>
+          <input
+            type="text"
+            id="userid"
+            placeholder="SSGI202402"
+            class="formbold-form-input"/>
+          </div>
+        <div class="formbold-input-group">
+          <label for="subject" class="formbold-form-label"> Teacher Name </label>
+          <input type="text" id="subject" placeholder="Teacher 2" class="formbold-form-input" />
+        </div>
+        <hr><hr>
+
+        <div class="formbold-input-group">
+            <label for="username" class="formbold-form-label"> Subject ID </label>
+            <input
+              type="text"
+              id="userid"
+              placeholder="SSGI704"
+              class="formbold-form-input"/>
+            </div>
+            <div class="formbold-input-group">
+            <label for="username" class="formbold-form-label"> Subject Name </label>
+            <input
+              type="text"
+              id="userid"
+              placeholder="ST"
+              class="formbold-form-input"/>
+            </div> 
+        <div class="formbold-input-group">
+          <label for="username" class="formbold-form-label"> Teacher ID </label>
+          <input
+            type="text"
+            id="userid"
+            placeholder="SSGI202403"
+            class="formbold-form-input"/>
+          </div>
+        <div class="formbold-input-group">
+          <label for="subject" class="formbold-form-label"> Teacher Name </label>
+          <input type="text" id="subject" placeholder="Teacher 3" class="formbold-form-input" />
+        </div>
+        <hr><hr>
+
+        <div class="formbold-input-group">
+            <label for="username" class="formbold-form-label"> Subject ID </label>
+            <input
+              type="text"
+              id="userid"
+              placeholder="SSGI705"
+              class="formbold-form-input"/>
+            </div>
+            <div class="formbold-input-group">
+            <label for="username" class="formbold-form-label"> Subject Name </label>
+            <input
+              type="text"
+              id="userid"
+              placeholder="NLP"
+              class="formbold-form-input"/>
+            </div> 
+        <div class="formbold-input-group">
+          <label for="username" class="formbold-form-label"> Teacher ID </label>
+          <input
+            type="text"
+            id="userid"
+            placeholder="SSGI202402"
+            class="formbold-form-input"/>
+          </div>
+        <div class="formbold-input-group">
+          <label for="subject" class="formbold-form-label"> Teacher Name </label>
+          <input type="text" id="subject" placeholder="Teacher 2" class="formbold-form-input" />
+        </div>
+      </form>
+
+        <a href="teacher.html" class="button">Add Subject</a>
+<br><br><br>
+        <h2 style="color:rgb(14, 14, 14);">Enter Lab Subjects and Respective Teacher</h2>
+        <div class="formbold-input-group">
+        <label for="username" class="formbold-form-label"> Subject ID </label>
+        <input
+          type="text"
+          id="userid"
+          placeholder="SSGI711"
+          class="formbold-form-input"/>
+        </div>
+        <div class="formbold-input-group">
+        <label for="username" class="formbold-form-label"> Subject Name </label>
+        <input
+          type="text"
+          id="userid"
+          placeholder="CNS Lab"
+          class="formbold-form-input"/>
+        </div>  
+    <div class="formbold-input-group">
+      <label for="username" class="formbold-form-label"> Teacher ID </label>
+      <input
+        type="text"
+        id="userid"
+        placeholder="SSGI202404"
+        class="formbold-form-input"/>
+      </div>
+    <div class="formbold-input-group">
+      <label for="subject" class="formbold-form-label"> Teacher Name </label>
+      <input type="text" id="subject" placeholder="Teacher 4" class="formbold-form-input" />
+    </div>
+    <hr><hr>
+
+    <div class="formbold-input-group">
+        <label for="username" class="formbold-form-label"> Subject ID </label>
+        <input
+          type="text"
+          id="userid"
+          placeholder="SSGI712"
+          class="formbold-form-input"/>
+        </div>
+        <div class="formbold-input-group">
+        <label for="username" class="formbold-form-label"> Subject Name </label>
+        <input
+          type="text"
+          id="userid"
+          placeholder="CC LAB"
+          class="formbold-form-input"/>
+        </div>  
+    <div class="formbold-input-group">
+      <label for="username" class="formbold-form-label"> Teacher ID </label>
+      <input
+        type="text"
+        id="userid"
+        placeholder="SSGI202402"
+        class="formbold-form-input"/>
+      </div>
+    <div class="formbold-input-group">
+      <label for="subject" class="formbold-form-label"> Teacher Name </label>
+      <input type="text" id="subject" placeholder="Teacher 2" class="formbold-form-input" />
+    </div>
+    <hr><hr>
+
+    <div class="formbold-input-group">
+        <label for="username" class="formbold-form-label"> Subject ID </label>
+        <input
+          type="text"
+          id="userid"
+          placeholder="SSGI713"
+          class="formbold-form-input"/>
+        </div>
+        <div class="formbold-input-group">
+        <label for="username" class="formbold-form-label"> Subject Name </label>
+        <input
+          type="text"
+          id="userid"
+          placeholder="PROJECT LAB"
+          class="formbold-form-input"/>
+        </div>   
+    <div class="formbold-input-group">
+      <label for="username" class="formbold-form-label"> Teacher ID </label>
+      <input
+        type="text"
+        id="userid"
+        placeholder="SSGI202402"
+        class="formbold-form-input"/>
+      </div>
+    <div class="formbold-input-group">
+      <label for="subject" class="formbold-form-label"> Teacher Name </label>
+      <input type="text" id="subject" placeholder="Teacher 2" class="formbold-form-input" />
+    </div>
+    <hr><hr>
+
+    <div class="formbold-input-group">
+        <label for="username" class="formbold-form-label"> Subject ID </label>
+        <input
+          type="text"
+          id="userid"
+          placeholder="SSGI714"
+          class="formbold-form-input"/>
+        </div>
+        <div class="formbold-input-group">
+        <label for="username" class="formbold-form-label"> Subject Name </label>
+        <input
+          type="text"
+          id="userid"
+          placeholder="IT"
+          class="formbold-form-input"/>
+        </div> 
+    <div class="formbold-input-group">
+      <label for="username" class="formbold-form-label"> Teacher ID </label>
+      <input
+        type="text"
+        id="userid"
+        placeholder="SSGI202404"
+        class="formbold-form-input"/>
+      </div>
+    <div class="formbold-input-group">
+      <label for="subject" class="formbold-form-label"> Teacher Name </label>
+      <input type="text" id="subject" placeholder="Teacher 4" class="formbold-form-input" />
+    </div>
+    <hr><hr>
+  </form>
+
+    <a href="teacher.html" class="button">Add Lab Subject</a>
+        <div class="text-center">
+        <a href="view_tt.html" class="button large">Coutinue</a>
+        </div>
+      </form>
+    </div>  
+</body>
+
+</html>
